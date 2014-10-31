@@ -37,7 +37,9 @@ class Msg:
 
 	def _is_a_quit(self):
 		for i in ("casse-toi", "casse toi", "pars",
-				"barre-toi","barre toi", "dégage", "fuis"):
+				"barre-toi","barre toi", "dégage", 
+				"fuis", "déguerpis", "va-t-en", 
+				"file", "dehors", "tu sors"):
 			if i in self.low or i.replace(" toi"," tio").replace("-toi","-tio") in self.low:
 				return 1
 		return 0
